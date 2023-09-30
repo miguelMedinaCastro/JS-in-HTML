@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="yuri" align = "center"></h1>
+
+    <script>
+        /* Faça um script que receba dois valores, sendo um valor inicial e o outro valor final.
+        O script deve escrever na tela os números um abaixo do outro, partindo do valor inicial
+        até o valor final, com incremento igual a 1. Por exemplo: o usuário entrou com o número 4 e 7, então na tela deverá aparecer:
+        4 5 6 7 (um abaixo do outro) */
+
+        var valorInicial = parseInt(prompt("qual inteiro queres: "))
+        var valorFinal = parseInt(prompt("qual inteiro queres dnv tche: "))
+
+        var contador = 0
+
+        var dif = valorFinal - valorInicial
+
+        var menorValor = Math.min(valorInicial, valorFinal)
+
+        var texto = ""
+        
+        for(contador; contador <= Math.abs(dif); contador++){
+            kevin= menorValor + contador
+            texto = texto + kevin + "\n"
+        }
+        
+        document.getElementById("yuri").innerText = texto
+    </script>
+
+</body>
+</html>

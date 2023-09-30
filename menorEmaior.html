@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        cont = 0
+
+        var maior = 0
+        var menor = 1000000
+
+        while (cont <= 4){
+            var numero = parseInt(prompt("Diz um número aí tche: "))
+            cont++
+
+            if (numero > maior){
+                maior = numero
+            }
+
+
+            if (numero < menor){
+                menor = numero
+            }
+        
+        }
+        
+        
+        alert("Maior número é: " + maior)
+        alert("Menor número é: " + menor)
+    
+
+    </script>
+</body>
+</html>

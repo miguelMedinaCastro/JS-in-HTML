@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tempo Real </title>
+</head>
+<body>
+
+    <h1 id = "horas" align = "center">  </h1>
+    <h1 id = "msg" align = "center"></h1> 
+
+    <script>
+        /* Faça um script que obtenha a hora atual do computador e apresente na tela a hora
+        e a seguinte mensagem:
+        - Se for antes das 12 horas escreva “Bom Dia”
+        - Se for após as 12 horas escreva “Boa Tarde”
+        - Se não for nenhum dos casos acima, escreva “Boa Noite”
+        OBS: a hora e a mensagem devem ser mostradas no HTML e não usando o comando
+        console.log. */
+
+
+        var dataAtual = new Date()
+        
+        var horas = dataAtual.getHours()
+        var completo = dataAtual.getMinutes()
+        
+        if (horas < 12){
+            document.getElementById("msg").innerText = "Bom Dia meus bacanos"
+            console.log("Bom dia")
+        }else if (horas < 18){
+            document.getElementById("msg").innerText = "Boa tarde meus bacanos"
+            console.log("Boa tarde")
+        }else {
+            document.getElementById("msg").innerText = "Boa noite meus bacanos"
+            console.log("Boa noite")
+        }
+
+        document.getElementById("horas").innerText = horas +":"+ completo
+        
+    </script>
+
+
+</body>
+</html>
