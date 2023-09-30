@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id = "kevin" align = "center"></h1>
+    <h1 id = "yuri" align = "center"></h1>
+    
+    <script>
+        var acumulador = 0
+        var cont = 85
+
+        var texto = ""
+        
+        while (cont <= 901){
+            if (cont % 2 == 0){
+                texto += cont + "\n"
+                acumulador += cont
+            }
+            
+            cont++
+        }
+
+        document.getElementById("kevin").innerText = acumulador
+        document.getElementById("yuri").innerText = texto
+
+    </script>
+</body>
+</html>
